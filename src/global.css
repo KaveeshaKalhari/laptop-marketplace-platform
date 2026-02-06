@@ -1,0 +1,273 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+    /* ========================================
+       LAPTOP MARKETPLACE - DARK THEME PALETTE
+       Modern, Premium, Tech-Focused Design
+       ======================================== */
+
+    /* Primary Colors - Tech Blue */
+    --primary: #3b82f6;
+    --primary-hover: #2563eb;
+    --primary-active: #1d4ed8;
+
+    /* Accent Colors */
+    --accent-cyan: #06b6d4;
+    --accent-cyan-hover: #0891b2;
+    --accent-purple: #a855f7;
+    --accent-purple-hover: #9333ea;
+
+    /* Dark Backgrounds */
+    --bg-main: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --bg-elevated: #334155;
+    --bg-modal: #1e293b;
+    --bg-hover: #334155;
+
+    /* Text Colors */
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-disabled: #64748b;
+    --text-link: #60a5fa;
+
+    /* Borders & Dividers */
+    --border: #334155;
+    --border-hover: #475569;
+    --border-focus: #3b82f6;
+    --divider: #1e293b;
+
+    /* Status Colors */
+    --success: #22c55e;
+    --success-bg: rgba(34, 197, 94, 0.1);
+    --warning: #f59e0b;
+    --warning-bg: rgba(245, 158, 11, 0.1);
+    --error: #ef4444;
+    --error-bg: rgba(239, 68, 68, 0.1);
+    --info: #3b82f6;
+    --info-bg: rgba(59, 130, 246, 0.1);
+
+    /* UI Specific Colors */
+    --rating: #facc15;
+    --price-highlight: #22c55e;
+    --discount: #ec4899;
+    --discount-bg: rgba(236, 72, 153, 0.1);
+
+    /* Shadows & Elevation */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
+    --shadow-md:
+            0 4px 6px -1px rgba(0, 0, 0, 0.5),
+            0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg:
+            0 10px 15px -3px rgba(0, 0, 0, 0.5),
+            0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-xl:
+            0 20px 25px -5px rgba(0, 0, 0, 0.5),
+            0 10px 10px -5px rgba(0, 0, 0, 0.3);
+
+    /* Glow Effects */
+    --glow-cyan: 0 0 20px rgba(6, 182, 212, 0.3);
+    --glow-blue: 0 0 20px rgba(59, 130, 246, 0.3);
+    --glow-purple: 0 0 20px rgba(168, 85, 247, 0.3);
+
+    /* Legacy mappings for compatibility */
+    --font-size: 16px;
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+    --card: #1e293b;
+    --card-foreground: #f1f5f9;
+    --popover: #1e293b;
+    --popover-foreground: #f1f5f9;
+    --primary-foreground: #ffffff;
+    --secondary: #334155;
+    --secondary-foreground: #f1f5f9;
+    --muted: #334155;
+    --muted-foreground: #94a3b8;
+    --accent: #06b6d4;
+    --accent-foreground: #0f172a;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border-color: #334155;
+    --input: transparent;
+    --input-background: #1e293b;
+    --switch-background: #475569;
+    --font-weight-medium: 500;
+    --font-weight-normal: 400;
+    --ring: #3b82f6;
+    --chart-1: #3b82f6;
+    --chart-2: #06b6d4;
+    --chart-3: #22c55e;
+    --chart-4: #f59e0b;
+    --chart-5: #ef4444;
+    --radius: 0.75rem;
+    --sidebar: #1e293b;
+    --sidebar-foreground: #f1f5f9;
+    --sidebar-primary: #3b82f6;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #334155;
+    --sidebar-accent-foreground: #f1f5f9;
+    --sidebar-border: #334155;
+    --sidebar-ring: #3b82f6;
+}
+
+@theme inline {
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border-color);
+    --color-input: var(--input);
+    --color-input-background: var(--input-background);
+    --color-switch-background: var(--switch-background);
+    --color-ring: var(--ring);
+    --color-chart-1: var(--chart-1);
+    --color-chart-2: var(--chart-2);
+    --color-chart-3: var(--chart-3);
+    --color-chart-4: var(--chart-4);
+    --color-chart-5: var(--chart-5);
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(
+            --sidebar-primary-foreground
+    );
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(
+            --sidebar-accent-foreground
+    );
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        background-color: var(--bg-main);
+        color: var(--text-primary);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+    :where(
+    :not(:has([class*=" text-"]), :not(:has([class^="text-"])))
+  ) {
+        h1 {
+            font-size: var(--text-2xl);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        h2 {
+            font-size: var(--text-xl);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: var(--text-lg);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        h4 {
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        label {
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+            color: var(--text-primary);
+        }
+
+        button {
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-medium);
+            line-height: 1.5;
+        }
+
+        input {
+            font-size: var(--text-base);
+            font-weight: var(--font-weight-normal);
+            line-height: 1.5;
+        }
+    }
+}
+
+/* Custom Utility Classes for Dark Theme */
+@layer utilities {
+    .bg-main {
+        background-color: var(--bg-main);
+    }
+
+    .bg-secondary-dark {
+        background-color: var(--bg-secondary);
+    }
+
+    .bg-card-dark {
+        background-color: var(--bg-card);
+    }
+
+    .bg-elevated {
+        background-color: var(--bg-elevated);
+    }
+
+    .text-primary-dark {
+        color: var(--text-primary);
+    }
+
+    .text-secondary-dark {
+        color: var(--text-secondary);
+    }
+
+    .border-dark {
+        border-color: var(--border);
+    }
+
+    .glow-cyan {
+        box-shadow: var(--glow-cyan);
+    }
+
+    .glow-blue {
+        box-shadow: var(--glow-blue);
+    }
+
+    .glow-purple {
+        box-shadow: var(--glow-purple);
+    }
+}
+
+html {
+    font-size: var(--font-size);
+}
